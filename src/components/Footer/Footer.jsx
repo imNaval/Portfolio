@@ -17,8 +17,8 @@ const Footer = () => {
             <div className={`primaryText ${css.left}`}>
                 <span>Let's make something <br /> amazing together</span>
                 <span>
-                    Start by <a href='mailto:nehranvl2017@gmail.com'>Saying hi
-                    </a>
+                    <a href='mailto:nehranvl2017@gmail.com'>Say hello </a>
+                    to Naval
                 </span>
             </div>
 

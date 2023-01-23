@@ -1,9 +1,9 @@
 import React from 'react'
-import css from './Hero.module.scss'
+import css from './Home.module.scss'
 import {motion} from 'framer-motion'
 import {staggerContainer, fadeIn, slideIn} from '../../utils/motion'
 
-const Hero = () => {
+const Home = () => {
   return (
     <section className={`padding ${css.wrapper}`}>
         <motion.div 
@@ -13,6 +13,8 @@ const Hero = () => {
         viewport={{once: false, amount: 0.25}}
         className={`innerWidth ${css.container}`}>
 
+        <a className='anchor' id='Home'></a>
+
             <div className={css.upperElement}>
                 <motion.span className='primaryText'
                 variants={fadeIn("right", "tween", 0.2, 1)}>
@@ -20,8 +22,8 @@ const Hero = () => {
                 </motion.span>
                 <motion.span className='secondaryText'
                 variants={fadeIn("left", "tween", 0.4, 1)}>
-                    I design beautiful simple
-                    <br /> things, And I love what i do
+                    Frontend Developer
+                    <br /> I love to design beautiful ui
                 </motion.span>
             </div>
 
@@ -38,17 +40,17 @@ const Hero = () => {
             <div className={css.lowerElement}>
                 <motion.div variants={fadeIn("right", "tween", 0.3, 1)} className={css.experience}>
                     <div className='primaryText'>
-                        10
+                        6
                     </div>
                     <div className='secondaryText'>
-                        <div>Years</div>
+                        <div>Months</div>
                         <div>Experience</div>
                     </div>
                 </motion.div>
                 <motion.div variants={fadeIn("left", "tween", 0.2, 1)} className={css.certificate}>
-                    <img src="./certificate.png" alt="certificateImage" />
-                    <span>CERTIFICATE PROFESSIONAL</span>
-                    <span>FRONTEND DEVELOPER</span>
+                    <img src="./college.png" alt="collegeImage" />
+                    <span>M N N I T '22</span>
+                    <span>Electronic and Communication Engineering</span>
                 </motion.div>
             </div>
         </motion.div>
@@ -56,4 +58,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Home

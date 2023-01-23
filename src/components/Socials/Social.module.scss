@@ -1,6 +1,7 @@
 @import '../../styles/contants.scss';
 
 .wrapper{
+    background: white;
 
     .container{
 
@@ -44,12 +45,16 @@
                 border-radius: 20px;
                 position: relative;
 
-                img{
+                .icons{
                     margin: auto;
-                    border-radius: 100%;
+                    // border-radius: 100%;
+                    align-items: center;
+                    // text-align: center;
+                    padding: 10px;
+                    border-radius: 999px;
                     width: 3.5rem;
                     height: 3.5rem;
-                    position: absolute;
+                    // position: absolute;
                     top: -2rem;
                     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.08));
                 }
@@ -58,6 +63,10 @@
                     text-align: center;
                     font-size: 1rem;
                     line-height: 25px;
+
+                    a{
+                        color: orange;
+                    }
                 }
 
                 .line{

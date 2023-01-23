@@ -1,10 +1,10 @@
 import React from 'react'
-import css from './Experience.module.scss'
+import css from './Project.module.scss'
 import {motion} from 'framer-motion'
 import { fadeIn, staggerChildren, textVariant2, zoomIn } from '../../utils/motion'
-import { workExp } from '../../utils/data'
+import { projects } from '../../utils/data'
 
-const Experience = () => {
+const Project = () => {
   return (
     <motion.section
       initial="hidden"
@@ -12,23 +12,32 @@ const Experience = () => {
       variants={staggerChildren}
       viewport={{once: false, amount: 0.25}}
       className={`paddings ${css.wrapper}`}>
+        <a className='anchor' id='Project'></a>
+
         <div className={`flexCenter innerWidth ${css.container}`}>
-            <span className='primaryText yPadding'>My Work Experience</span>
+            <span className='primaryText yPadding'>Personal Projects</span>
 
             <div className={`flexCenter ${css.experience}`}>
               {
-                workExp.map((exp, i)=>{
+                projects.map((project, i)=>{
                   return(
                     <motion.div
                       variants={textVariant2}
                       className={`flexCenter ${css.exp}`} key={i}>
                       <div className={css.post}>
-                        <h1>{exp.place}</h1>
-                        <p>{exp.tenure}</p>
+                        <h1>{project.title}</h1>
+                        <a href={project.link}>visit</a>
                       </div>
                       <div className={css.role}>
-                        <h1>{exp.role}</h1>
-                        <p>{exp.detail}</p>
+                        <h3>Description</h3>
+                        <ul>
+                        {
+                          project.detail.map(det =>{
+                            return <li style={{listStyle: "none"}}>{det}</li>
+                          })
+                        }
+                        </ul>
+
                       </div>
                     </motion.div>
                   )
@@ -40,6 +49,9 @@ const Experience = () => {
                 <div><div className={css.circle} style={{background:"#286f6c"}}></div></div>
                 <div><div className={css.circle} style={{background:"#f2704e"}}></div></div>
                 <div><div className={css.circle} style={{background:"#eec04d"}}></div></div>
+                {/* <div><div className={css.circle} style={{background:"#286f6c"}}></div></div>
+                <div><div className={css.circle} style={{background:"#f2704e"}}></div></div>
+                <div><div className={css.circle} style={{background:"#eec04d"}}></div></div> */}
               </motion.div>
 
             </div>
@@ -48,4 +60,4 @@ const Experience = () => {
   )
 }
 
-export default Experience
+export default Project

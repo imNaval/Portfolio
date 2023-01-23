@@ -1,24 +1,46 @@
-import { HiOutlineDesktopComputer } from "react-icons/hi";
-import { CiMobile1 } from "react-icons/ci";
-import { MdWorkspacesOutline } from "react-icons/md";
-export const projectExperience = [
+import { FaCode, FaReact, FaDatabase } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+import { GiComputing } from "react-icons/gi";
+import { MdNordicWalking } from "react-icons/md";
+import { FaLinkedinIn, FaGithub, FaSkype, FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
+
+
+export const skills = [
   {
-    name: "Website Design",
-    projects: 76,
-    icon: HiOutlineDesktopComputer,
+    name: "Problem Solving",
+    detail: "Solved 200+ problems on leetcode",
+    icon: SiLeetcode,
     bg: "#286F6C",
   },
   {
-    name: "Mobile App Design",
-    projects: 63,
-    icon: CiMobile1,
+    name: "Programming Languages",
+    detail: "C++, Java, JavaScript, C#",
+    icon: FaCode,
+    bg: "#28aF6C",
+  },
+  {
+    name: "Frontend",
+    detail: "HTML, CSS, React",
+    icon: FaReact,
     bg: "#EEC048",
   },
   {
-    name: "Brand Identity",
-    projects: 47,
-    icon: MdWorkspacesOutline,
+    name: "Backend",
+    detail: "Node.js, MongoDB, SQL",
+    icon: FaDatabase,
+    bg: "#7CB9E8",
+  },
+  {
+    name: "Also know about",
+    detail: "OS, Networking, dbms",
+    icon: GiComputing,
     bg: "#F26440",
+  },
+  {
+    name: "Hobbies",
+    detail: "Playing: Cricket, OnlineGames, Watching cricket and listening musics",
+    icon: MdNordicWalking,
+    bg: "#8cff1f",
   },
 ];
 
@@ -27,93 +49,89 @@ export const WhatDoIHelp = [
   "We use process design to create digital products. Besides that also help their business",
 ];
 
-export const workExp = [
+export const projects = [
   {
-    place: "Self-Employed, Brisbane",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "Visual Designer",
-    detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+    title: "Advanced Notepad",
+    detail: ["his project was written in Java by using of NetBeans",
+            "It have functionality like copy, cut, paste etc. and all other that required for notepad",
+            "Use .properties file extension for store project configuration data and settings",
+            "This Notepad is a simply text editor with an internal calculator for better user experience"]
   },
   {
-    place: "New Man Services",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "UI/UX Designer",
-    detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+    title: "NoteBook",
+    link: "",
+    detail : ["ts a simple notebook where we can store our important notes",
+            "Use React as frontend library and html, css",
+            "use material ui for some good looking icons"]
   },
   {
-    place: "Global Solution",
-    tenure: "Aug 2014 - Sep 2016",
-    role: "Sr. Product Designer",
-    detail:
-      "A visual desginer dsesign for a variety of platoforms, may include internet and internet sites, games, movies, kioasks and wearbies. In short, they create the concepts",
+    title: "Secrets App",
+    link: "",
+    detail: ["Technology used HTML, CSS, JavaScript, jQuery, Node.js, RESTfull API, Authentication.", 
+            "User can share there secrets anonymously."]
   },
+  // {
+  //   title: "Movie Hub",
+  //   link: "",
+  //   detail: ["A visual desginer dsesign for a variety of platoforms,", "may include internet and internet sites, games, movies, kioasks and wearbies."," In short, they create the concepts"]
+  // },
+  // {
+  //   title: "E-commerce Website",
+  //   link: "",
+  //   detail:
+  //     ["A visual desginer dsesign for a variety of platoforms", "may include internet and internet sites, games, movies, kioasks and wearbies.", "In short, they create the concepts"]
+  // },
 ];
 
-export const comments = [
+export const socials = [
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
+    name: "LinkedIn",
+    bg: "#0A66C2",
+    comment: "lets check my public repos and suggest me some good thing to improve my work, or if you find some bugs then drop a comment we discuss it together ",
+    link: "https://www.linkedin.com/in/naval-nehra-0a686217a",
+    icon: FaLinkedinIn
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
+    name: "Github",
+    bg: "#4078c0",
+    comment: "Have some new idea for a project or want to work together lets start a conversation here",
+    link: "https://github.com/imNaval",
+    icon: FaGithub
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
+    name: "Skype",
+    bg: "#4267B2",
+    comment: "Connect on skype to discuss some ideas on our works",
+    link: "ive:.cid.a7d5e1ff38060ce1",
+    icon: FaSkype
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
+    name: "LeetCode",
+    bg: "#4267B2",
+    comment: "Here is my leetcode profile if you have some coding problem or want to suggest or ask or discuss a problem pick question from here",
+    link: "https://leetcode.com/navwe/",
+    icon: SiLeetcode
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
+    name: "Twitter",
+    bg: "#1DA1F2",
+    comment: "Have some news! wanna discuss some serious topics lets connect on twitter",
+    link: "https://twitter.com/NehraNaval",
+    icon: FaTwitter
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
+    name: "Facebook",
+    bg: "#4267B2",
+    comment: "ohh! it's time to chill share some funny things or something else to chill",
+    link: "https://www.facebook.com/navlaram.nehra",
+    icon: FaFacebook
   },
   {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people1.png",
-  },
-  {
-    name: "Anamika Sandula",
-    post: "Creative Manager",
-    comment:
-      "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-    img: "./people2.png",
+    name: "Instagram",
+    bg: "#d62976",
+    comment: "ohh! it's time to chill. share some funny reels..........",
+    link: "https://www.instagram.com/_im_naval/",
+    icon: FaInstagram
   },
 ];
 
@@ -146,7 +164,7 @@ export const sliderSettings = {
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 780,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -154,3 +172,4 @@ export const sliderSettings = {
     },
   ],
 };
+
