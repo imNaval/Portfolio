@@ -1,10 +1,19 @@
 import { motion } from 'framer-motion';
-import React from 'react'
+import React, { useState } from 'react'
 import { footerVariants, staggerChildren } from '../../utils/motion';
+import { BiPhoneCall } from 'react-icons/bi'
 const d = new Date();
 import css from './Footer.module.scss'
 
 const Footer = () => {
+
+    const [isNumberCopied, setNumberCopied] = useState(false);
+    function numberCopied(){
+        navigator.clipboard.writeText('+91 635 0431 551');
+        // alert("mobile number copied");
+        setNumberCopied(true);
+        setTimeout(()=>{setNumberCopied(false)}, 1000)
+    }
   return (
     <motion.section
       initial="hidden"
@@ -26,6 +35,10 @@ const Footer = () => {
                 <div className={css.info}>
                     <span className='secondaryText'>Information</span>
                     <p>Bisarniyan(Barmer), Rajasthan</p>
+                    <div className={css.phone} onClick={numberCopied} >
+                        <BiPhoneCall size={"40px"} style={{backgroundColor : isNumberCopied ? "blue" : "white"}}/>
+                        <span>+91 635 0431 551</span>
+                    </div>
                     <p className={css.copyright}>Made by Navwe <br/> Copyright ©{d.getFullYear()}</p>
                 </div>
             </div>

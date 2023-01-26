@@ -19,6 +19,17 @@
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
+
+            .college{
+                display: flex;
+                flex-direction:column;
+                align-items: center;
+
+                .img{
+                    margin-bottom: 1rem;
+                    width: 3.5rem;
+                }
+            }
         }
 
         .person{
@@ -81,16 +92,16 @@
                 }
             }
 
-            .certificate{
-                display: flex;
-                flex-direction:column;
-                align-items: center;
+            // .college{
+            //     display: flex;
+            //     flex-direction:column;
+            //     align-items: center;
 
-                .img{
-                    margin-bottom: 1rem;
-                    width: 3.5rem;
-                }
-            }
+            //     .img{
+            //         margin-bottom: 1rem;
+            //         width: 3.5rem;
+            //     }
+            // }
         }
     }
 }

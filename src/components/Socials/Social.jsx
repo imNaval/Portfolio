@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import Slider from 'react-slick'
 import { socials, sliderSettings } from '../../utils/data'
@@ -7,6 +7,8 @@ import { footerVariants, staggerChildren } from '../../utils/motion'
 import css from './Social.module.scss'
 
 const Social = () => {
+
+    const [isHover, setHover] = useState(false);
   return (
     <motion.section 
       initial="hidden"
@@ -33,10 +35,13 @@ const Social = () => {
                         socials.map((social, i)=>{
                             return(
                                 <div className={`flexCenter ${css.comment}`}>
-                                    <div className={`flexCenter ${css.icons}`} style={{background: social.bg}}>
-                                        <social.icon size={35} color='white'/>
+                                    <div className={`flexCenter ${css.icons}`}
+                                        style={{background: social.bg}}
+                                        onMouseOver={(e) => {}}
+                                        >
+                                        <a href={social.link} ><social.icon size={35} color='white'/></a>
                                     </div>
-                                    <p>connect with Naval on <a href={social.link}>{social.name}</a></p>
+                                    <p>Connect with Naval on <a href={social.link}>{social.name}</a></p>
 
                                     <div className={css.line}></div>
                                     <div className={css.bio}>

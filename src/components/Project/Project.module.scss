@@ -22,12 +22,15 @@
                     flex: 1;
                 }
 
-                a{
-                    color: orange;
+                .title{
+                    a{
+                        text-decoration: none;
+                        color: $secondary;
+                        &:hover{
+                            color: orange;
+                        }
+                    }
                 }
-
-                // .post{
-                // }
 
                 .role{
                     margin-left: 2rem;

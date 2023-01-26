@@ -1,7 +1,7 @@
 import { FaCode, FaReact, FaDatabase } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { GiComputing } from "react-icons/gi";
-import { MdNordicWalking } from "react-icons/md";
+import { MdNordicWalking, MdEmail } from "react-icons/md";
 import { FaLinkedinIn, FaGithub, FaSkype, FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
 
 
@@ -52,7 +52,7 @@ export const WhatDoIHelp = [
 export const projects = [
   {
     title: "Advanced Notepad",
-    detail: ["his project was written in Java by using of NetBeans",
+    detail: ["This project was written in Java by using of NetBeans",
             "It have functionality like copy, cut, paste etc. and all other that required for notepad",
             "Use .properties file extension for store project configuration data and settings",
             "This Notepad is a simply text editor with an internal calculator for better user experience"]
@@ -60,7 +60,7 @@ export const projects = [
   {
     title: "NoteBook",
     link: "",
-    detail : ["ts a simple notebook where we can store our important notes",
+    detail : ["Its a simple notebook where we can store our important notes",
             "Use React as frontend library and html, css",
             "use material ui for some good looking icons"]
   },
@@ -87,7 +87,7 @@ export const socials = [
   {
     name: "LinkedIn",
     bg: "#0A66C2",
-    comment: "lets check my public repos and suggest me some good thing to improve my work, or if you find some bugs then drop a comment we discuss it together ",
+    comment: "Lets check my public repos and suggest me some good thing to improve my work, or if you find some bugs then drop a comment we discuss it together ",
     link: "https://www.linkedin.com/in/naval-nehra-0a686217a",
     icon: FaLinkedinIn
   },
@@ -106,6 +106,12 @@ export const socials = [
     icon: FaSkype
   },
   {
+    name: "Email",
+    bg: "#4285F4",
+    comment: "Send me mail for professional work",
+    icon : MdEmail
+  },
+  {
     name: "LeetCode",
     bg: "#4267B2",
     comment: "Here is my leetcode profile if you have some coding problem or want to suggest or ask or discuss a problem pick question from here",
@@ -122,14 +128,14 @@ export const socials = [
   {
     name: "Facebook",
     bg: "#4267B2",
-    comment: "ohh! it's time to chill share some funny things or something else to chill",
+    comment: "Ohh! it's time to chill share some funny things or something else to chill",
     link: "https://www.facebook.com/navlaram.nehra",
     icon: FaFacebook
   },
   {
     name: "Instagram",
     bg: "#d62976",
-    comment: "ohh! it's time to chill. share some funny reels..........",
+    comment: "Ohh! it's time to chill. share some funny reels..........",
     link: "https://www.instagram.com/_im_naval/",
     icon: FaInstagram
   },

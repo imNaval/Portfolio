@@ -24,9 +24,8 @@ const Project = () => {
                     <motion.div
                       variants={textVariant2}
                       className={`flexCenter ${css.exp}`} key={i}>
-                      <div className={css.post}>
-                        <h1>{project.title}</h1>
-                        <a href={project.link}>visit</a>
+                      <div className={css.title}>
+                        <a href={project.link}><h1>{project.title}</h1></a>
                       </div>
                       <div className={css.role}>
                         <h3>Description</h3>

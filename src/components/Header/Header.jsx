@@ -1,12 +1,24 @@
 import React, { useRef, useState } from 'react'
 import css from './Header.module.scss'
-import {BiMenuAltRight, BiPhoneCall} from 'react-icons/bi'
+import {BiMenuAltRight, BiDownload} from 'react-icons/bi'
 import {motion} from 'framer-motion'
 import {getMenuStyles, headerVariants } from '../../utils/motion'
 import useHeaderShadow from '../../hooks/useHeaderShadow'
 import useOutsideAlerter from '../../hooks/useOutsideAlerter'
 
 const Header = () => {
+
+  function downloadResume(){
+    fetch('./Naval-Resume.pdf').then(res =>{
+      res.blob().then(blob => {
+        const file = window.URL.createObjectURL(blob);
+        let alink = document.createElement('a');
+        alink.href = file;
+        alink.download = './Naval-Resume.pdf';
+        alink.click();
+      })
+    })
+  }
 
   const [menuOpened , setMenuOpened] = useState(false);
   const headerShadow = useHeaderShadow();
@@ -37,9 +49,11 @@ const Header = () => {
           <li><a href="#Skills">Skills</a></li>
           <li><a href="#Project">Projects</a></li>
           <li><a href="#Social">Socials</a></li>
-          <li className={`flexCenter ${css.phone}`}>
-            <p>+91 635 0431 551</p>
-            <BiPhoneCall size={"40px"}/>
+          <li className={`flexCenter ${css.resume}`}>
+            <a onClick = {downloadResume}
+              className='flexCenter'>
+              <p>Resume</p>
+              <BiDownload size={"40px"}/></a>
           </li>
         </ul>
         <div className={css.menuIcon}
