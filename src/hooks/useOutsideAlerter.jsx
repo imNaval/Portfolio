@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export default function useOutsideAlerter({menuRef, setMenuOpened}) {
   const viewport_width = document.documentElement.clientWidth;
