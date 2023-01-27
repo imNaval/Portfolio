@@ -20,11 +20,7 @@ const Home = () => {
                 variants={fadeIn("right", "tween", 0.2, 1)}>
                     Hey There, <br /> I'm Naval
                 </motion.span>
-                {/* <motion.span className='secondaryText'
-                    variants={fadeIn("left", "tween", 0.4, 1)}>
-                    Frontend Developer
-                    <br /> I love to design beautiful ui
-                </motion.span> */}
+
                 <motion.div variants={fadeIn("left", "tween", 0.2, 1)} className={css.college}>
                     <img src="./college.png" alt="collegeImage" />
                     <span>M N N I T '22</span>
@@ -36,11 +32,6 @@ const Home = () => {
             <motion.div className={css.person} variants={fadeIn("up", "tween", 0.3, 1)}>
                 <motion.img src='./person.png' alt='myImage' variants={slideIn("up", "tween", 0.5, 1.2)}/>
             </motion.div>
-
-            {/* my email */}
-            {/* <a className={css.email} href='mailto:nehranvl2017@gmail.com'>
-                nehranvl2017@gmail.com
-            </a> */}
 
             <div className={css.lowerElement}>
                 <motion.span className='secondaryText'
@@ -58,11 +49,7 @@ const Home = () => {
                         <div>Experience</div>
                     </div>
                 </motion.div>
-                {/* <motion.div variants={fadeIn("left", "tween", 0.2, 1)} className={css.certificate}>
-                    <img src="./college.png" alt="collegeImage" />
-                    <span>M N N I T '22</span>
-                    <span>Electronic and Communication Engineering</span>
-                </motion.div> */}
+
             </div>
         </motion.div>
     </section>

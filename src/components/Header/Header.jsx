@@ -1,6 +1,7 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState,createContext } from 'react'
 import css from './Header.module.scss'
 import {BiMenuAltRight, BiDownload} from 'react-icons/bi'
+import {FaSun, FaMoon} from 'react-icons/fa'
 import {motion} from 'framer-motion'
 import {getMenuStyles, headerVariants } from '../../utils/motion'
 import useHeaderShadow from '../../hooks/useHeaderShadow'
@@ -24,6 +25,14 @@ const Header = () => {
   const headerShadow = useHeaderShadow();
   const menuRef = useRef()
 
+  //navwe
+  const [menuClick, setMenuClick] = useState(0);
+  // const [darkMode, setDarkMode] = useState(false);
+
+  // function Dark_Bright(){
+  //   return darkMode ? <FaSun color='#fff' size={"20px"}/> : <FaMoon size={"20px"}/>
+  // }
+
   useOutsideAlerter({
     menuRef,
     setMenuOpened
@@ -43,6 +52,9 @@ const Header = () => {
         <div className={css.name}>
           Navala Ram
         </div>
+        {/* <div onClick={()=>setDarkMode(prev=> !prev)}>
+          {Dark_Bright()}
+        </div> */}
         <ul ref={menuRef}
           style={getMenuStyles(menuOpened)} className={`flexCenter ${css.menu}`}>
           <li><a href="#Home">Home</a></li>
@@ -57,8 +69,10 @@ const Header = () => {
           </li>
         </ul>
         <div className={css.menuIcon}
-          onClick= {()=>setMenuOpened((prev)=> !prev)}
-          >
+          onClick= {()=>{setMenuClick(prev=> prev+1); 
+            // setMenuOpened((prev)=> !prev); 
+            setMenuOpened(menuClick%2 ? false : true);
+          }}>
           <BiMenuAltRight size={30}/>
         </div>
       </div>

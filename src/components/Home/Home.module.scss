@@ -14,6 +14,9 @@
                 justify-content: center;
                 text-align: center;
                 gap: 2rem;
+                //navwe
+                display: flex;
+                flex-direction: column;
             }
             display: flex;
             align-items: center;
@@ -72,11 +75,14 @@
         }
 
         .lowerElement{
-            @media (max-width: $sm),
-            (max-width: $md) {
+            @media (max-width: $sm){
                 margin-top: 4rem;
+                align-items: center;
                 gap: 2rem;
                 justify-content: center;
+                //navwe
+                display: flex;
+                flex-direction: column;
             }
             margin-top: 12rem;
             display: flex;;
@@ -92,16 +98,6 @@
                 }
             }
 
-            // .college{
-            //     display: flex;
-            //     flex-direction:column;
-            //     align-items: center;
-
-            //     .img{
-            //         margin-bottom: 1rem;
-            //         width: 3.5rem;
-            //     }
-            // }
         }
     }
 }
