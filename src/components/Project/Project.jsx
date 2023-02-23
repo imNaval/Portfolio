@@ -48,9 +48,9 @@ const Project = () => {
                 <div><div className={css.circle} style={{background:"#286f6c"}}></div></div>
                 <div><div className={css.circle} style={{background:"#f2704e"}}></div></div>
                 <div><div className={css.circle} style={{background:"#eec04d"}}></div></div>
-                {/* <div><div className={css.circle} style={{background:"#286f6c"}}></div></div>
+                <div><div className={css.circle} style={{background:"#286f6c"}}></div></div>
                 <div><div className={css.circle} style={{background:"#f2704e"}}></div></div>
-                <div><div className={css.circle} style={{background:"#eec04d"}}></div></div> */}
+                {/* <div><div className={css.circle} style={{background:"#eec04d"}}></div></div> */}
               </motion.div>
 
             </div>
