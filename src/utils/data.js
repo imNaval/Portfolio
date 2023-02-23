@@ -51,6 +51,21 @@ export const WhatDoIHelp = [
 
 export const projects = [
   {
+    title: "ChatApp",
+    link: "https://chat-e0101.web.app/",
+    detail : ["Register and Login feature",
+            "A user can search their friends by user name and chat with them",
+            "Use React as frontend library and style with scss",
+            "use material ui for some good looking icons"]
+  },
+  {
+    title: "chatGPT clone",
+    link: "https://chat-gpt-client-eight.vercel.app/",
+    detail : ["We can ask any question to chat-gpt and it will answer",
+            "Technology used: Javascript, React, Node, OpenAI, Scss, html",
+            ]
+  },
+  {
     title: "Advanced Notepad",
     detail: ["This project was written in Java by using of NetBeans",
             "It have functionality like copy, cut, paste etc. and all other that required for notepad",
